@@ -40,6 +40,15 @@ namespace VehicleValuation.Services.Services
                     GuidePrice = new Random().Next(1, 10000)
                 };
 
+                //Encrypt PII here. These can then be stored in the DB.
+                var salt = EncryptionService.GetSalt();
+
+                var nameEncrypted = EncryptionService.Encrypt(request.CustomerName, salt);
+
+                var telephoneNumbers = string.Join(",", request.TelephoneNumbers);
+
+                var telephoneNumbersEncrpted = EncryptionService.Encrypt(telephoneNumbers, salt);
+
                 return response;
             }
             else
