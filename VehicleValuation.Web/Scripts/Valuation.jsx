@@ -61,9 +61,9 @@
                     <label htmlFor="vrm">Email Address</label><br />
                     <input id="customerEmail" type="email" placeholder="Eg John@gmail.com" ref={(customerEmail) => this.customerEmail = customerEmail} required />
                     <label htmlFor="telNo">Tel No.</label><br />
-                    <input id="telNo" type="text" placeholder="Eg 01902555555" ref={(telNo) => this.telNo = telNo} required />
+                    <input id="telNo" type="tel" pattern="^[0-9-+s()]*$" placeholder="Eg 01902555555" ref={(telNo) => this.telNo = telNo} required />
                     <label htmlFor="mobile">Mobile</label><br />
-                    <input id="mobile" type="text" placeholder="Eg 0771234567" ref={(mobile) => this.mobile = mobile} required />
+                    <input id="mobile" type="tel" pattern="^[0-9-+s()]*$" placeholder="Eg 0771234567" ref={(mobile) => this.mobile = mobile} required />
                     <p>
                         <button type="submit">Submit</button>
                     </p>
