@@ -18,7 +18,9 @@ namespace VehicleValuation.Web
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            ReactConfig.Configure();       
+            ReactConfig.Configure();
+
+            MvcHandler.DisableMvcResponseHeader = true;
         }
     }
 }
