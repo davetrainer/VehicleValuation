@@ -42,7 +42,8 @@ namespace VehicleValuation.Web.UnitTests
                 VehicleRegistration = "AB12ERT",
                 Mileage = 10000,
                 CustomerEmail = "test@test.com",
-                CustomerName = "test"
+                CustomerName = "test",
+                TelephoneNumbers = new[] { "1111111", "2222222" }
             };
         }
 

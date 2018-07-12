@@ -37,7 +37,7 @@ namespace VehicleValuation.Services.Services
                 {
                     ValuationDate = DateTime.Now,
                     ExpiryDate = DateTime.Now.AddDays(7),
-                    GuidePrice = new Random().Next(1, 10000)
+                    GuidePrice = new Random().Next(1, 20000)
                 };
 
                 //Encrypt PII here. These can then be stored in the DB.
